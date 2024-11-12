@@ -5,9 +5,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Havish Pallerla</title>
-        <meta name="description" content="Havish Pallerla's personal site" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Havish</title>
+        <meta name="description" content="Havish's Personal Website" />
       </Head>
 
       <main className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white text-center">
