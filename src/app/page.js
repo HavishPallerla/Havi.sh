@@ -69,7 +69,7 @@ export default function Home() {
               </div>
             </Link>
             <Link
-              href="/projects"
+              href="havi.sh/projects"
               className={`transform hover:scale-110 transition-all duration-300 ${
                 isDark ? 'text-gray-300 hover:text-[#fee6cd]' : 'text-[#18243E]/70 hover:text-[#18243E]'
               }`}
@@ -77,7 +77,7 @@ export default function Home() {
               Projects
             </Link>
             <Link
-              href="/blog"
+              href="havi.sh/blog"
               className={`transform hover:scale-110 transition-all duration-300 ${
                 isDark ? 'text-gray-300 hover:text-[#fee6cd]' : 'text-[#18243E]/70 hover:text-[#18243E]'
               }`}
