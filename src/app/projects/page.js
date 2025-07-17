@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import SwirlBackground from './components/SwirlBackground';
+import SwirlBackground from '../components/SwirlBackground';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,44 +22,30 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "discord.bio",
-      description: "The simple way to extend your Discord profile.",
-      icon: "💬",
+      title: "Arcode",
+      description: "A playful arcade-style platform for learning to code.",
+      icon: "🕹️",
       link: "#",
       external: true
     },
     {
-      title: "ven.earth",
-      description: "The website you're currently on! Made with Next.js and utilises serverless functions.",
-      icon: "🌍",
+      title: "CodeSync",
+      description: "Real-time collaborative code editor with live syntax highlighting and version control.",
+      icon: "�",
       link: "#",
       external: true
     },
     {
-      title: "Lookup",
-      description: "Easily get data about a Discord account from an ID.",
-      icon: "🔍",
-      link: "#",
-      external: true
-    },
-    {
-      title: "Huecord",
-      description: "A Discord bot to manage Philips Hue appliances within Discord.",
-      icon: "💡",
-      link: "#",
-      external: true
-    },
-    {
-      title: "Spotify Dashboard",
-      description: "A minimalistic dashboard for Spotify, allowing you to view your top songs and artists and play music from the application.",
-      icon: "🎵",
+      title: "DevFlow",
+      description: "Streamlined development workflow manager with automated testing and deployment pipelines.",
+      icon: "⚡",
       link: "#",
       external: false
     },
     {
-      title: "Light Dashboard",
-      description: "A Philips Hue dashboard made with React, allowing control of light appliances directly from the browser.",
-      icon: "💡",
+      title: "CloudNest",
+      description: "Secure cloud storage solution with intelligent file organization and team collaboration features.",
+      icon: "☁️",
       link: "#",
       external: false
     }
@@ -70,29 +56,19 @@ export default function Projects() {
     {
       title: "VoiceBiometric Auth",
       technologies: "Salesforce, Lightning Web Components, Apex, JavaScript, Pindrop APIs",
-      description: [
-        "Engineered voice biometric system with Pindrop API and Salesforce, reducing verification time by 85%",
-        "Developed fraud detection pipeline using voice analysis to identify deepfakes with 90%+ accuracy",
-        "Created Salesforce integration with custom LWCs and real-time APIs, saving $25M+ annually"
-      ]
+      description: "Engineered a comprehensive voice biometric authentication system integrated with Salesforce, reducing verification time by 85% while achieving 90%+ accuracy in deepfake detection and saving $25M+ annually.",
+      link: "#",
+      external: true
     },
     {
       title: "Side Quest",
       technologies: "React, TypeScript, Node.js, AWS",
-      description: [
-        "Built full-stack travel platform with personalized itinerary recommendations for 100+ users",
-        "Integrated Google Maps API and real-time data processing, increasing user engagement by 40%",
-        "Deployed on AWS with automated testing and CI/CD, achieving sub-200ms response times"
-      ]
+      description: "Built a full-stack travel platform serving 100+ users with personalized itinerary recommendations, Google Maps integration, and AWS deployment achieving sub-200ms response times."
     },
     {
       title: "JSON Derulo TaskManager",
       technologies: "Java, Spring Boot, Kubernetes, PostgreSQL",
-      description: [
-        "Developed task management system with Java Spring Boot backend serving 50+ users",
-        "Built automated notification system with email/SMS integration, improving task completion rates by 12%",
-        "Implemented role-based access control and JWT authentication, supporting 5+ user permission levels"
-      ]
+      description: "Developed a task management system with Java Spring Boot backend serving 50+ users, featuring automated notifications, role-based access control, and JWT authentication supporting 5+ permission levels."
     }
   ];
 
@@ -194,7 +170,7 @@ export default function Projects() {
                           isDark ? 'text-gray-400' : 'text-[#18243E]/60'
                         }`} fill="currentColor" viewBox="0 0 20 20">
                           <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                          <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002 2h6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
+                          <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
                         </svg>
                       )}
                     </div>
@@ -217,39 +193,69 @@ export default function Projects() {
             </h2>
             
             {detailedProjects.map((project, index) => (
-              <div
-                key={index}
-                className={`p-8 rounded-xl border ${
-                  isDark 
-                    ? 'bg-gray-800/20 border-gray-700' 
-                    : 'bg-white/20 border-[#18243E]/20'
-                }`}
-              >
-                <h3 className={`text-2xl font-bold mb-2 ${
-                  isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-                }`}>
-                  {project.title}
-                </h3>
-                <p className={`text-sm mb-4 italic ${
-                  isDark ? 'text-gray-400' : 'text-[#18243E]/70'
-                }`}>
-                  {project.technologies}
-                </p>
-                <ul className="space-y-2">
-                  {project.description.map((item, itemIndex) => (
-                    <li
-                      key={itemIndex}
-                      className={`flex items-start space-x-2 ${
-                        isDark ? 'text-gray-300' : 'text-[#18243E]/80'
-                      }`}
-                    >
-                      <span className={`mt-2 w-1 h-1 rounded-full flex-shrink-0 ${
-                        isDark ? 'bg-[#fee6cd]' : 'bg-[#18243E]'
-                      }`} />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+              <div key={index}>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target={project.external ? "_blank" : "_self"}
+                    rel={project.external ? "noopener noreferrer" : ""}
+                    className={`block p-8 rounded-xl border transition-all duration-200 hover:scale-105 ${
+                      isDark 
+                        ? 'bg-gray-800/20 border-gray-700 hover:border-gray-600' 
+                        : 'bg-white/20 border-[#18243E]/20 hover:border-[#18243E]/40'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-2 mb-2">
+                      <h3 className={`text-2xl font-bold ${
+                        isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
+                      }`}>
+                        {project.title}
+                      </h3>
+                      {project.external && (
+                        <svg className={`w-5 h-5 ${
+                          isDark ? 'text-gray-400' : 'text-[#18243E]/60'
+                        }`} fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                          <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
+                        </svg>
+                      )}
+                    </div>
+                    <p className={`text-sm mb-4 italic ${
+                      isDark ? 'text-gray-400' : 'text-[#18243E]/70'
+                    }`}>
+                      {project.technologies}
+                    </p>
+                    <p className={`${
+                      isDark ? 'text-gray-300' : 'text-[#18243E]/80'
+                    }`}>
+                      {project.description}
+                    </p>
+                  </a>
+                ) : (
+                  <div
+                    className={`p-8 rounded-xl border ${
+                      isDark 
+                        ? 'bg-gray-800/20 border-gray-700' 
+                        : 'bg-white/20 border-[#18243E]/20'
+                    }`}
+                  >
+                    <h3 className={`text-2xl font-bold mb-2 ${
+                      isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
+                    }`}>
+                      {project.title}
+                    </h3>
+                    <p className={`text-sm mb-4 italic ${
+                      isDark ? 'text-gray-400' : 'text-[#18243E]/70'
+                    }`}>
+                      {project.technologies}
+                    </p>
+                    <p className={`${
+                      isDark ? 'text-gray-300' : 'text-[#18243E]/80'
+                    }`}>
+                      {project.description}
+                    </p>
+                  </div>
+                )}
               </div>
             ))}
           </div>
