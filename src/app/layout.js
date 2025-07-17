@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: 'Havish',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="antialiased transition-colors duration-300">
         {children}
+        <Analytics />
       </body>
     </html>
   );

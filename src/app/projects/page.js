@@ -22,30 +22,30 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Arcode",
-      description: "A playful arcade-style platform for learning to code.",
-      icon: "🕹️",
-      link: "#",
-      external: true
-    },
-    {
-      title: "CodeSync",
-      description: "Real-time collaborative code editor with live syntax highlighting and version control.",
-      icon: "�",
-      link: "#",
-      external: true
-    },
-    {
-      title: "DevFlow",
-      description: "Streamlined development workflow manager with automated testing and deployment pipelines.",
-      icon: "⚡",
+      title: "Humana Search Engine",
+      description: "Developed an intelligent search platform with React/TypeScript and Node.js, streamlining workflows from 8 to 2 steps across 15+ services for 10,000+ users.",
+      icon: "🔎",
       link: "#",
       external: false
     },
     {
-      title: "CloudNest",
-      description: "Secure cloud storage solution with intelligent file organization and team collaboration features.",
-      icon: "☁️",
+      title: "AI Coding Assistant",
+      description: "AI coding assistant serving 200+ developers with intelligent code suggestions.",
+      icon: "🤖",
+      link: "#",
+      external: false
+    },
+    {
+      title: "L'SPACE",
+      description: "Developed autonomous navigation software for simulated Mars rover missions, integrating CI/CD pipelines and enabling seamless cross-team collaboration.",
+      icon: "🪐",
+      link: "#",
+      external: false
+    },
+    {
+      title: "Arcode",
+      description: "Where coding meets the arcade — a fun, interactive way to level up your programming skills.",
+      icon: "🕹️",
       link: "#",
       external: false
     }
@@ -57,7 +57,7 @@ export default function Projects() {
       title: "VoiceBiometric Auth",
       technologies: "Salesforce, Lightning Web Components, Apex, JavaScript, Pindrop APIs",
       description: "Engineered a comprehensive voice biometric authentication system integrated with Salesforce, reducing verification time by 85% while achieving 90%+ accuracy in deepfake detection and saving $25M+ annually.",
-      link: "#",
+      link: "https://drive.google.com/file/d/1Lmn3-5jUhpCsGRjEWh9d7bBgYbVW_1YB/view",
       external: true
     },
     {
