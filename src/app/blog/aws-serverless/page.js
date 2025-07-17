@@ -164,7 +164,7 @@ export default function AWSServerlessPost() {
               </h2>
 
               <p>
-                Let's explore a typical serverless API architecture using Infrastructure as Code:
+                Let&apos;s explore a typical serverless API architecture using Infrastructure as Code:
               </p>
 
               <div className={`rounded-lg p-6 my-6 ${
@@ -330,7 +330,7 @@ module.exports = { createUser };`}
               </h2>
 
               <p>
-                Serverless applications excel in event-driven scenarios. Here's how to implement robust event processing:
+                Serverless applications excel in event-driven scenarios. Here&apos;s how to implement robust event processing:
               </p>
 
               <div className={`rounded-lg p-6 my-6 ${
@@ -362,7 +362,7 @@ module.exports = { createUser };`}
           break;
       }
     } catch (error) {
-      // Log error but don't fail the entire batch
+      // Log error but don&apos;t fail the entire batch
       console.error('Error processing record:', record, error);
       
       // Send to DLQ for retry

@@ -139,7 +139,7 @@ export default function Projects() {
             <p className={`text-lg ${
               isDark ? 'text-gray-300' : 'text-[#18243E]/80'
             }`}>
-              A list of all the projects I've worked on or I'm currently working on.
+              A list of all the projects I&apos;ve worked on or I&apos;m currently working on.
             </p>
           </div>
 

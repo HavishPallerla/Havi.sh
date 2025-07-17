@@ -131,7 +131,7 @@ export default function FontAwesomeVercelPost() {
               <p>
                 Whilst making this website, I opted to use <a href="https://fontawesome.com" className={`${
                   isDark ? 'text-[#fee6cd] hover:text-gray-300' : 'text-[#18243E] hover:text-[#18243E]/70'
-                } transition-colors duration-200 underline`}>FontAwesome</a>'s icons as they have such an expansive library available.
+                } transition-colors duration-200 underline`}>FontAwesome</a>&apos;s icons as they have such an expansive library available.
               </p>
 
               <p>
@@ -177,7 +177,7 @@ export default function FontAwesomeVercelPost() {
               </ul>
 
               <p>
-                Once you've added this file to your project root, Vercel will be able to authenticate with FontAwesome's npm registry during the build process and successfully install your Pro packages.
+                Once you&apos;ve added this file to your project root, Vercel will be able to authenticate with FontAwesome&apos;s npm registry during the build process and successfully install your Pro packages.
               </p>
 
               <h2 className={`text-2xl font-bold mt-8 mb-4 ${
@@ -191,7 +191,7 @@ export default function FontAwesomeVercelPost() {
                   isDark ? 'bg-gray-800 text-[#fee6cd]' : 'bg-[#18243E]/10 text-[#18243E]'
                 }`}>.npmrc</code> file to your <code className={`px-2 py-1 rounded text-sm ${
                   isDark ? 'bg-gray-800 text-[#fee6cd]' : 'bg-[#18243E]/10 text-[#18243E]'
-                }`}>.gitignore</code> if you're committing your auth token directly, or better yet, use environment variables in production for enhanced security.
+                }`}>.gitignore</code> if you&apos;re committing your auth token directly, or better yet, use environment variables in production for enhanced security.
               </p>
 
               <p>

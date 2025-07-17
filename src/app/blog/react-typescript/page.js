@@ -162,7 +162,7 @@ export default function ReactTypeScriptPost() {
               </h2>
 
               <p>
-                Here's how to properly type React components for maximum scalability:
+                Here&apos;s how to properly type React components for maximum scalability:
               </p>
 
               <div className={`rounded-lg p-6 my-6 ${
@@ -268,7 +268,7 @@ type AppAction =
               </ol>
 
               <p>
-                By following these patterns and practices, you'll build React applications that are not only scalable but also maintainable and enjoyable to work with. TypeScript's learning curve is worth the investment for any serious React development.
+                By following these patterns and practices, you&apos;ll build React applications that are not only scalable but also maintainable and enjoyable to work with. TypeScript&apos;s learning curve is worth the investment for any serious React development.
               </p>
             </div>
           </div>

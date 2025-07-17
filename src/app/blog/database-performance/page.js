@@ -145,7 +145,7 @@ export default function DatabasePerformancePost() {
               </h2>
 
               <p>
-                Before diving into solutions, let's identify the most common database performance issues:
+                Before diving into solutions, let&apos;s identify the most common database performance issues:
               </p>
 
               <ul className="space-y-2 list-disc list-inside">
@@ -163,7 +163,7 @@ export default function DatabasePerformancePost() {
               </h2>
 
               <p>
-                The first step is to optimize your JPA queries. Here's how to solve the N+1 problem:
+                The first step is to optimize your JPA queries. Here&apos;s how to solve the N+1 problem:
               </p>
 
               <div className={`rounded-lg p-6 my-6 ${

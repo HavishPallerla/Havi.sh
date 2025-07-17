@@ -130,7 +130,7 @@ export default function Blog() {
             <p className={`text-lg ${
               isDark ? 'text-gray-300' : 'text-[#18243E]/80'
             }`}>
-              A collection of blog posts I've written. Sorted chronologically.
+              A collection of blog posts I&apos;ve written. Sorted chronologically.
             </p>
           </div>
 
