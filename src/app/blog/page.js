@@ -22,6 +22,14 @@ export default function Blog() {
 
   const blogPosts = [
     {
+      title: "Essential Recruiting Interview Tips: A Developer's Perspective",
+      description: "Practical advice and insights from my experience interviewing at top tech companies, including preparation strategies and what really matters.",
+      date: "September 18, 2025",
+      readTime: "7 min read",
+      link: "/blog/recruiting-interview-tips",
+      tags: ["Career", "Interviews", "Tech"]
+    },
+    {
       title: "How to get FontAwesome Pro to work with Vercel deployment",
       description: "A quick and concise solution to anyone attempting to use FontAwesome Pro icons with Vercel.",
       date: "March 15, 2025",
