@@ -22,6 +22,14 @@ export default function Blog() {
 
   const blogPosts = [
     {
+      title: "Building Apps That Fuel Your Passions: A Developer's Learning Journey",
+      description: "How creating SideQuest for travel and Arcode for learning transformed my approach to software development, and why building solutions for your own interests is the key to continuous growth.",
+      date: "September 22, 2025",
+      readTime: "8 min read",
+      link: "/blog/passion-driven-development",
+      tags: ["Learning", "Development", "Passion", "Growth"]
+    },
+    {
       title: "Essential Recruiting Interview Tips: A Developer's Perspective",
       description: "Practical advice and insights from my experience interviewing at top tech companies, including preparation strategies and what really matters.",
       date: "September 18, 2025",
@@ -30,9 +38,17 @@ export default function Blog() {
       tags: ["Career", "Interviews", "Tech"]
     },
     {
+      title: "Modern Automotive Software Testing: UI Automation and Quality Assurance",
+      description: "Exploring advanced testing methodologies for automotive software interfaces, including automation frameworks, integration testing, and quality validation strategies for mission-critical systems.",
+      date: "September 15, 2025",
+      readTime: "9 min read",
+      link: "/blog/automotive-ui-testing",
+      tags: ["Automotive", "Testing", "Automation", "QA"]
+    },
+    {
       title: "How to get FontAwesome Pro to work with Vercel deployment",
       description: "A quick and concise solution to anyone attempting to use FontAwesome Pro icons with Vercel.",
-      date: "March 15, 2025",
+      date: "September 10, 2025",
       readTime: "5 min read",
       link: "/blog/fontawesome-vercel",
       tags: ["Vercel", "FontAwesome", "Deployment"]
@@ -40,7 +56,7 @@ export default function Blog() {
     {
       title: "Building Scalable React Applications with TypeScript",
       description: "Learn best practices for structuring large React applications using TypeScript, including component patterns and state management.",
-      date: "February 12, 2025",
+      date: "August 28, 2025",
       readTime: "8 min read",
       link: "/blog/react-typescript",
       tags: ["React", "TypeScript", "Architecture"]
@@ -48,7 +64,7 @@ export default function Blog() {
     {
       title: "Optimizing Database Performance in Spring Boot Applications",
       description: "Explore advanced techniques for improving database query performance and implementing efficient caching strategies in Spring Boot.",
-      date: "January 28, 2025",
+      date: "August 15, 2025",
       readTime: "12 min read",
       link: "/blog/database-performance",
       tags: ["Spring Boot", "Database", "Performance"]
@@ -56,7 +72,7 @@ export default function Blog() {
     {
       title: "Voice Biometrics: The Future of Authentication",
       description: "Deep dive into voice biometric technology, security considerations, and implementation strategies for modern applications.",
-      date: "May 7, 2025",
+      date: "July 30, 2025",
       readTime: "10 min read",
       link: "/blog/voice-biometrics",
       tags: ["Biometrics", "Security", "Authentication"]
@@ -64,7 +80,7 @@ export default function Blog() {
     {
       title: "AWS Serverless Architecture: From Concept to Production",
       description: "Complete guide to building and deploying serverless applications on AWS, including best practices and cost optimization.",
-      date: "June 22, 2025",
+      date: "July 18, 2025",
       readTime: "15 min read",
       link: "/blog/aws-serverless",
       tags: ["AWS", "Serverless", "Cloud"]

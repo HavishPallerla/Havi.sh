@@ -162,7 +162,7 @@ export default function RecruitingInterviewTipsPost() {
               <ul className={`list-disc pl-6 space-y-2 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
                 <li><strong>Data Structures & Algorithms:</strong> Master the fundamentals—arrays, linked lists, trees, graphs, and common algorithms. Use LeetCode, but don&apos;t just memorize solutions.</li>
                 <li><strong>System Design:</strong> Even for junior roles, understand basic concepts like scalability, databases, and API design. Draw diagrams and explain trade-offs.</li>
-                <li><strong>Your Tech Stack:</strong> Be ready to deep-dive into technologies you&apos;ve actually used. I was asked detailed questions about React hooks, Salesforce Apex, and database optimization.</li>
+                <li><strong>Your Tech Stack:</strong> Be ready to deep-dive into technologies you&apos;ve actually used.</li>
               </ul>
 
               <h2 className={`text-2xl md:text-3xl font-bold mt-12 mb-6 ${
