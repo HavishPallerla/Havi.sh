@@ -65,7 +65,7 @@ export default function MeetHavish() {
             <h1 className={`text-4xl md:text-5xl font-bold mb-6 ${
               isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
             }`}>
-              Meet Havish: The Guy Who's Always Smiling
+              Meet Havish: The Guy Who&apos;s Always Smiling
             </h1>
             <div className={`flex flex-wrap justify-center gap-4 text-sm ${
               isDark ? 'text-gray-400' : 'text-gray-600'
@@ -108,7 +108,7 @@ export default function MeetHavish() {
               </p>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                It's not just for show either. I genuinely find joy in the little things. There's something about approaching life with optimism and enthusiasm that makes every day feel like an adventure. Even when challenges come up (and trust me, they do), I've found that a positive attitude and a smile can turn obstacles into opportunities.
+                It&apos;s not just for show either. I genuinely find joy in the little things. There&apos;s something about approaching life with optimism and enthusiasm that makes every day feel like an adventure. Even when challenges come up (and trust me, they do), I&apos;ve found that a positive attitude and a smile can turn obstacles into opportunities.
               </p>
 
               <h2 className={`text-2xl md:text-3xl font-bold mt-12 mb-6 ${
@@ -118,7 +118,7 @@ export default function MeetHavish() {
               </h2>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                While I love writing code and building applications, some of my best moments happen away from the keyboard. Here's what keeps me energized and inspired:
+                While I love writing code and building applications, some of my best moments happen away from the keyboard. Here&apos;s what keeps me energized and inspired:
               </p>
 
               <h3 className={`text-xl font-semibold mt-8 mb-4 ${
@@ -128,7 +128,7 @@ export default function MeetHavish() {
               </h3>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                Basketball has been a huge part of my life for as long as I can remember. There's something magical about the rhythm of the game: the strategy, the teamwork, the split-second decisions, and yes, even the friendly trash talk. Whether it's a pickup game at the local court or watching my favorite teams battle it out, basketball always gets my adrenaline pumping.
+                Basketball has been a huge part of my life for as long as I can remember. There&apos;s something magical about the rhythm of the game: the strategy, the teamwork, the split-second decisions, and yes, even the friendly trash talk. Whether it&apos;s a pickup game at the local court or watching my favorite teams battle it out, basketball always gets my adrenaline pumping.
               </p>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
@@ -142,7 +142,7 @@ export default function MeetHavish() {
               </h3>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                I'm a huge fan of poker and card games in general. There's something fascinating about the blend of strategy, psychology, and calculated risk-taking. Whether it's Texas Hold'em with friends or exploring new card games, I love the mental challenge and the social aspect.
+                I&apos;m a huge fan of poker and card games in general. There&apos;s something fascinating about the blend of strategy, psychology, and calculated risk-taking. Whether it&apos;s Texas Hold&apos;em with friends or exploring new card games, I love the mental challenge and the social aspect.
               </p>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
@@ -156,11 +156,11 @@ export default function MeetHavish() {
               </h3>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                I'm definitely a people person. Some of my favorite memories are just hanging out with friends, whether we're trying a new restaurant, exploring the city, having deep conversations about life, or just laughing until our stomachs hurt over something completely ridiculous.
+                I&apos;m definitely a people person. Some of my favorite memories are just hanging out with friends, whether we&apos;re trying a new restaurant, exploring the city, having deep conversations about life, or just laughing until our stomachs hurt over something completely ridiculous.
               </p>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                These moments remind me why human connections matter so much. In a world where we can get caught up in screens and notifications, there's nothing quite like genuine face-to-face time with people you care about.
+                These moments remind me why human connections matter so much. In a world where we can get caught up in screens and notifications, there&apos;s nothing quite like genuine face-to-face time with people you care about.
               </p>
 
               <h2 className={`text-2xl md:text-3xl font-bold mt-12 mb-6 ${
@@ -170,11 +170,11 @@ export default function MeetHavish() {
               </h2>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                One thing I want everyone to know: I absolutely love meeting new people and having genuine conversations. Whether you're a fellow developer looking to chat about tech, someone exploring a career change, a student who could use some guidance, or just someone who wants to say hello, I'm always up for a good conversation.
+                One thing I want everyone to know: I absolutely love meeting new people and having genuine conversations. Whether you&apos;re a fellow developer looking to chat about tech, someone exploring a career change, a student who could use some guidance, or just someone who wants to say hello, I&apos;m always up for a good conversation.
               </p>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                Don't hesitate to reach out! I believe in paying it forward and helping others however I can. Maybe you're stuck on a coding problem, considering a career in tech, or just want to grab coffee and talk about life. I'd genuinely love to help and get to know you better.
+                Don&apos;t hesitate to reach out! I believe in paying it forward and helping others however I can. Maybe you&apos;re stuck on a coding problem, considering a career in tech, or just want to grab coffee and talk about life. I&apos;d genuinely love to help and get to know you better.
               </p>
 
               <div className={`p-6 rounded-lg border ${
@@ -203,7 +203,7 @@ export default function MeetHavish() {
               </p>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                And that perpetual smile? It's not just personality; it's perspective. I genuinely believe that every challenge is a chance to learn something new, every project is an opportunity to make someone's life better, and every conversation is a chance to brighten someone's day.
+                And that perpetual smile? It&apos;s not just personality; it&apos;s perspective. I genuinely believe that every challenge is a chance to learn something new, every project is an opportunity to make someone&apos;s life better, and every conversation is a chance to brighten someone&apos;s day.
               </p>
 
               <h2 className={`text-2xl md:text-3xl font-bold mt-12 mb-6 ${
@@ -213,11 +213,11 @@ export default function MeetHavish() {
               </h2>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                So there you have it – a glimpse into who I am when I'm not writing code or debugging applications. I'm just a guy who loves life, enjoys good company, and believes in the power of genuine human connection.
+                So there you have it – a glimpse into who I am when I&apos;m not writing code or debugging applications. I&apos;m just a guy who loves life, enjoys good company, and believes in the power of genuine human connection.
               </p>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                If any of this resonates with you, or if you're just curious to chat, please don't be shy! Reach out on LinkedIn, send me an email, or if you're ever in the area, let's grab coffee or shoot some hoops. I promise you'll be greeted with a big smile and genuine interest in getting to know you.
+                If any of this resonates with you, or if you&apos;re just curious to chat, please don&apos;t be shy! Reach out on LinkedIn, send me an email, or if you&apos;re ever in the area, let&apos;s grab coffee or shoot some hoops. I promise you&apos;ll be greeted with a big smile and genuine interest in getting to know you.
               </p>
 
               <p className={`text-lg font-semibold text-center mt-8 ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
