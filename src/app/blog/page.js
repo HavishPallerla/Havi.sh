@@ -22,6 +22,14 @@ export default function Blog() {
 
   const blogPosts = [
     {
+      title: "Meet Havish: The Guy Who's Always Smiling",
+      description: "Getting to know the person behind the code: my love for basketball, poker, hanging with friends, and why you'll always catch me with a smile. Plus, how you can reach out if you want to chat!",
+      date: "September 22, 2025",
+      readTime: "5 min read",
+      link: "/blog/meet-havish",
+      tags: ["Personal", "Community", "Life"]
+    },
+    {
       title: "Building Apps That Fuel Your Passions: A Developer's Learning Journey",
       description: "How creating SideQuest for travel and Arcode for learning transformed my approach to software development, and why building solutions for your own interests is the key to continuous growth.",
       date: "September 22, 2025",

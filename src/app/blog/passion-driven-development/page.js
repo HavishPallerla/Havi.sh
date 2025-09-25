@@ -142,7 +142,7 @@ export default function PassionDrivenDevelopmentPost() {
           }`}>
             <div className="space-y-6">
               <p className={`text-lg leading-relaxed ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                There&apos;s something magical that happens when you build software to solve your own problems. It&apos;s not just about the end product—it&apos;s about the learning journey, the passion that drives you to iterate until it&apos;s perfect, and the deep understanding you gain along the way. Let me share how building apps for my own interests has shaped my growth as a developer and why I believe this approach is the secret to continuous learning.
+                There&apos;s something magical that happens when you build software to solve your own problems. It&apos;s not just about the end product: it&apos;s about the learning journey, the passion that drives you to iterate until it&apos;s perfect, and the deep understanding you gain along the way. Let me share how building apps for my own interests has shaped my growth as a developer and why I believe this approach is the secret to continuous learning.
               </p>
 
               <h2 className={`text-2xl md:text-3xl font-bold mt-12 mb-6 ${
@@ -152,7 +152,7 @@ export default function PassionDrivenDevelopmentPost() {
               </h2>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                Every great app starts with a frustration. For me, it was trying to plan the perfect trip with friends and getting overwhelmed by scattered information, conflicting recommendations, and the complexity of coordinating everyone&apos;s preferences. That frustration became <strong>SideQuest</strong>—a full-stack travel platform that now serves 100+ users with personalized itinerary recommendations, Google Maps integration, and sub-200ms response times.
+                Every great app starts with a frustration. For me, it was trying to plan the perfect trip with friends and getting overwhelmed by scattered information, conflicting recommendations, and the complexity of coordinating everyone&apos;s preferences. That frustration became <strong>SideQuest</strong>, a full-stack travel platform that now serves 100+ users with personalized itinerary recommendations, Google Maps integration, and sub-200ms response times.
               </p>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
@@ -170,7 +170,7 @@ export default function PassionDrivenDevelopmentPost() {
                   <li><strong>Database optimization:</strong> Making queries fast when you have real users waiting</li>
                   <li><strong>User experience design:</strong> What actually matters when someone is planning their dream vacation</li>
                   <li><strong>AWS deployment:</strong> Moving from localhost to production with confidence</li>
-                  <li><strong>Performance monitoring:</strong> Why sub-200ms response times became non-negotiable</li>
+                  <li><strong>Performance monitoring:</strong> Why sub 200ms response times became non-negotiable</li>
                 </ul>
               </div>
 
@@ -181,7 +181,7 @@ export default function PassionDrivenDevelopmentPost() {
               </h2>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                After SideQuest, I realized something profound: <strong>I learn best when I&apos;m having fun</strong>. Traditional coding tutorials felt disconnected from real-world application, and I wanted something more engaging. That&apos;s when I started building <strong>Arcode</strong>—a gamified learning platform where coding meets the arcade.
+                After SideQuest, I realized something profound: <strong>I learn best when I&apos;m having fun</strong>. Traditional coding tutorials felt disconnected from real-world application, and I wanted something more engaging. That&apos;s when I started building <strong>Arcode</strong>, a gamified learning platform where coding meets the arcade.
               </p>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
@@ -270,11 +270,11 @@ const useGameProgress = (userId, challengeId) => {
               </h2>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                One area where my passion really shines is <strong>quality assurance and testing</strong>. There&apos;s something deeply satisfying about building robust systems that work reliably under pressure. When I developed the Smart Email Triage System for Auto-Owners Insurance, it wasn&apos;t just about getting the NLP classification working—it was about ensuring it could handle thousands of emails without fail, classify them accurately, and integrate seamlessly with existing systems.
+                One area where my passion really shines is <strong>quality assurance and testing</strong>. There&apos;s something deeply satisfying about building robust systems that work reliably under pressure. When I developed the Smart Email Triage System for Auto-Owners Insurance, it wasn&apos;t just about getting the NLP classification working. It was about ensuring it could handle thousands of emails without fail, classify them accurately, and integrate seamlessly with existing systems.
               </p>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                I love the detective work of QA: finding edge cases, stress-testing systems, and building comprehensive test suites that give you confidence in your code. It&apos;s not just about preventing bugs—it&apos;s about understanding your system so deeply that you can predict how it will behave in scenarios you haven&apos;t even encountered yet.
+                I love the detective work of QA: finding edge cases, stress-testing systems, and building comprehensive test suites that give you confidence in your code. It&apos;s not just about preventing bugs. It&apos;s about understanding your system so deeply that you can predict how it will behave in scenarios you haven&apos;t even encountered yet.
               </p>
 
               <h3 className={`text-xl font-semibold mt-8 mb-4 ${
@@ -365,7 +365,7 @@ describe('Travel Recommendation Engine', () => {
               </p>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                Each project builds on the last, creating a compound effect of learning that wouldn&apos;t be possible if I were just following tutorials or building assigned projects. When you solve your own problems, you develop intuition, taste, and technical depth that can&apos;t be taught—only experienced.
+                Each project builds on the last, creating a compound effect of learning that wouldn&apos;t be possible if I were just following tutorials or building assigned projects. When you solve your own problems, you develop intuition, taste, and technical depth that can&apos;t be taught: only experienced.
               </p>
 
               <div className={`p-6 rounded-lg border ${
@@ -390,7 +390,7 @@ describe('Travel Recommendation Engine', () => {
               </h2>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                I&apos;m sharing my story not to impress, but to inspire. Every successful developer I know has a similar collection of passion projects—apps they built to solve their own problems, learn new technologies, or just because they found something interesting.
+                I&apos;m sharing my story not to impress, but to inspire. Every successful developer I know has a similar collection of passion projects: apps they built to solve their own problems, learn new technologies, or just because they found something interesting.
               </p>
 
               <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
