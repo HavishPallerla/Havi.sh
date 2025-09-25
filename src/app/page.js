@@ -118,7 +118,7 @@ export default function Home() {
 
         <div className="flex space-x-4 mb-12">
           {[
-            { href: 'https://github.com/havishpallerla', alt: 'github' },
+            // { href: 'https://github.com/havishpallerla', alt: 'github' },
             { href: 'https://linkedin.com/in/havishpallerla', alt: 'linkedin' },
             { href: 'https://discord.com/users/248496824506253322', alt: 'discord' },
             { href: 'mailto:hey@havi.sh', alt: 'email' },
