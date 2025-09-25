@@ -104,7 +104,7 @@ export default function MeetHavish() {
               </h2>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                If you've ever met me in person, there's probably one thing you noticed right away: I'm almost always smiling. Friends and family joke that it's nearly impossible to catch me without a grin on my face. Whether I'm debugging a particularly stubborn piece of code, brainstorming a new project idea, or just walking down the street, you'll likely see me with that signature smile.
+                If you&apos;ve ever met me in person, there&apos;s probably one thing you noticed right away: I&apos;m almost always smiling. Friends and family joke that it&apos;s nearly impossible to catch me without a grin on my face. Whether I&apos;m debugging a particularly stubborn piece of code, brainstorming a new project idea, or just walking down the street, you&apos;ll likely see me with that signature smile.
               </p>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
@@ -209,7 +209,7 @@ export default function MeetHavish() {
               <h2 className={`text-2xl md:text-3xl font-bold mt-12 mb-6 ${
                 isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
               }`}>
-                Let's Connect!
+                Let&apos;s Connect!
               </h2>
 
               <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
