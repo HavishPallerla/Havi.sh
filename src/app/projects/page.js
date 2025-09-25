@@ -23,7 +23,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Smart Email Triage System",
-      description: "NLP-powered tool that automatically analyzes customer support emails and classifies them into predefined categories, intelligently routing each email to the appropriate department.",
+      description: "NLP-powered tool developed for Auto-Owners Insurance that automatically analyzes customer support emails and classifies them into predefined categories, intelligently routing each email to the appropriate department.",
       icon: "📧",
       link: "#",
       external: false
@@ -44,7 +44,7 @@ export default function Projects() {
     },
     {
       title: "Arcode",
-      description: "Where coding meets the arcade — a fun, interactive way to level up your programming skills through gamified challenges.",
+      description: "A gamified learning platform where coding meets the arcade — designed to make programming education engaging through interactive challenges, progress tracking, and skill-based advancement.",
       icon: "🕹️",
       link: "#",
       external: false
