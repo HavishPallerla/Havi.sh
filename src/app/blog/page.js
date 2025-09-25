@@ -233,14 +233,14 @@ export default function Blog() {
             }`}>
               More posts coming soon! Follow me on{' '}
               <a 
-                href="https://github.com/havishpallerla" 
+                href="https://www.linkedin.com/in/havishpallerla/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={`font-medium ${
                   isDark ? 'text-[#fee6cd] hover:text-gray-300' : 'text-[#18243E] hover:text-[#18243E]/70'
                 } transition-colors duration-200`}
               >
-                GitHub
+                LinkedIn
               </a>
               {' '}for updates.
             </p>
