@@ -22,36 +22,35 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Humana Search Engine",
-      description: "Developed an intelligent search platform with React/TypeScript and Node.js, streamlining workflows from 8 to 2 steps across 15+ services for 10,000+ users.",
-      icon: "🔎",
+      title: "Smart Email Triage System",
+      description: "NLP-powered tool that automatically analyzes customer support emails and classifies them into predefined categories, intelligently routing each email to the appropriate department.",
+      icon: "📧",
       link: "#",
       external: false
     },
     {
-      title: "AI Coding Assistant",
-      description: "AI coding assistant serving 200+ developers with intelligent code suggestions.",
-      icon: "🤖",
+      title: "SideQuest App",
+      description: "Built a full-stack travel platform serving 100+ users with personalized itinerary recommendations, Google Maps integration, and AWS deployment achieving sub-200ms response times.",
+      icon: "�",
       link: "#",
       external: false
     },
     {
-      title: "L'SPACE",
+      title: "NASA L'SPACE",
       description: "Developed autonomous navigation software for simulated Mars rover missions, integrating CI/CD pipelines and enabling seamless cross-team collaboration.",
-      icon: "🪐",
+      icon: "🚀",
       link: "#",
       external: false
     },
     {
       title: "Arcode",
-      description: "Where coding meets the arcade — a fun, interactive way to level up your programming skills.",
+      description: "Where coding meets the arcade — a fun, interactive way to level up your programming skills through gamified challenges.",
       icon: "🕹️",
       link: "#",
       external: false
     }
   ];
 
-  // Additional detailed projects from your description
   const detailedProjects = [
     {
       title: "VoiceBiometric Auth",
@@ -61,14 +60,14 @@ export default function Projects() {
       external: true
     },
     {
-      title: "Side Quest",
-      technologies: "React, TypeScript, Node.js, AWS",
-      description: "Built a full-stack travel platform serving 100+ users with personalized itinerary recommendations, Google Maps integration, and AWS deployment achieving sub-200ms response times."
+      title: "Humana Internal Search Platform",
+      technologies: "React, TypeScript, Node.js, Elasticsearch",
+      description: "Built a comprehensive search platform that streamlined internal workflows from 8 to 2 steps across 15+ services, serving 10,000+ users and significantly improving operational efficiency."
     },
     {
-      title: "JSON Derulo TaskManager",
-      technologies: "Java, Spring Boot, Kubernetes, PostgreSQL",
-      description: "Developed a task management system with Java Spring Boot backend serving 50+ users, featuring automated notifications, role-based access control, and JWT authentication supporting 5+ permission levels."
+      title: "AI Coding Assistant",
+      technologies: "React, Node.js, OpenAI API, JavaScript, Python, Java",
+      description: "Engineered an AI coding assistant using React and Node.js that serves 500+ developers, delivering intelligent code suggestions with OpenAI API integration and custom prompt optimization for multiple programming languages."
     }
   ];
 
