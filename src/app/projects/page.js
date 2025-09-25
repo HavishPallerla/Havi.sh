@@ -22,16 +22,9 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Smart Email Triage System",
-      description: "NLP-powered tool developed for Auto-Owners Insurance that automatically analyzes customer support emails and classifies them into predefined categories, intelligently routing each email to the appropriate department.",
-      icon: "📧",
-      link: "#",
-      external: false
-    },
-    {
       title: "SideQuest App",
       description: "Built a full-stack travel platform serving 100+ users with personalized itinerary recommendations, Google Maps integration, and AWS deployment achieving sub-200ms response times.",
-      icon: "�",
+      icon: "🧳",
       link: "#",
       external: false
     },
@@ -52,6 +45,11 @@ export default function Projects() {
   ];
 
   const detailedProjects = [
+    {
+      title: "Smart Email Triage System",
+      technologies: "Python, NLP, Machine Learning",
+      description: "Developed an intelligent NLP-powered email classification system for Auto-Owners Insurance that automatically analyzes customer support emails, classifies them into predefined categories, and intelligently routes each email to the appropriate department, reducing manual sorting efforts and accelerating response times."
+    },
     {
       title: "VoiceBiometric Auth",
       technologies: "Salesforce, Lightning Web Components, Apex, JavaScript, Pindrop APIs",
@@ -75,11 +73,7 @@ export default function Projects() {
     <>
       <SwirlBackground />
       
-      <div
-        className={`min-h-screen transition-colors duration-300 relative ${
-          isDark ? 'bg-[#18243E]/50' : 'bg-[#fee6cd]/50'
-        } ${inter.className}`}
-      >
+      <div className={`min-h-screen transition-colors duration-300 relative ${isDark ? 'bg-[#18243E]/50' : 'bg-[#fee6cd]/50'} ${inter.className}`}>
         <nav className="flex items-center justify-between px-8 py-6 relative z-10">
           <Link href="/" className="transition-opacity duration-200 hover:opacity-70">
             <Image
@@ -94,17 +88,13 @@ export default function Projects() {
           <div className="flex items-center space-x-8">
             <Link
               href="/projects"
-              className={`text-sm ${
-                isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-              } transition-colors duration-200`}
+              className={`text-sm ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'} transition-colors duration-200`}
             >
               projects
             </Link>
             <Link
               href="/blog"
-              className={`text-sm ${
-                isDark ? 'text-gray-300 hover:text-[#fee6cd]' : 'text-[#18243E]/70 hover:text-[#18243E]'
-              } transition-colors duration-200`}
+              className={`text-sm ${isDark ? 'text-gray-300 hover:text-[#fee6cd]' : 'text-[#18243E]/70 hover:text-[#18243E]'} transition-colors duration-200`}
             >
               blog
             </Link>
@@ -112,9 +102,7 @@ export default function Projects() {
 
           <button
             onClick={() => setIsDark(!isDark)}
-            className={`p-2 rounded-lg ${
-              isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-[#18243E]/10 hover:bg-[#18243E]/20'
-            } transition-colors duration-200`}
+            className={`p-2 rounded-lg ${isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-[#18243E]/10 hover:bg-[#18243E]/20'} transition-colors duration-200`}
           >
             {isDark ? (
               <svg className={`h-4 w-4 text-[#fee6cd]`} fill="currentColor" viewBox="0 0 20 20">
@@ -130,64 +118,46 @@ export default function Projects() {
 
         <main className="px-8 py-16 max-w-4xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h1 className={`text-6xl md:text-7xl font-bold mb-6 ${
-              isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-            }`}>
+            <h1 className={`text-6xl md:text-7xl font-bold mb-6 ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
               Projects
             </h1>
-            <p className={`text-lg ${
-              isDark ? 'text-gray-300' : 'text-[#18243E]/80'
-            }`}>
+            <p className={`text-lg ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
               A list of all the projects I&apos;ve worked on or I&apos;m currently working on.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             {projects.map((project, index) => (
               <a
                 key={index}
                 href={project.link}
                 target={project.external ? "_blank" : "_self"}
                 rel={project.external ? "noopener noreferrer" : ""}
-                className={`block p-6 rounded-xl border transition-all duration-200 hover:scale-105 ${
-                  isDark 
-                    ? 'bg-gray-800/30 border-gray-700 hover:border-gray-600' 
-                    : 'bg-white/30 border-[#18243E]/20 hover:border-[#18243E]/40'
-                }`}
+                className={`block p-8 rounded-xl border transition-all duration-200 hover:scale-105 ${isDark ? 'bg-gray-800/30 border-gray-700 hover:border-gray-600' : 'bg-white/30 border-[#18243E]/20 hover:border-[#18243E]/40'}`}
               >
-                <div className="flex items-center space-x-4">
-                  <span className="text-2xl">{project.icon}</span>
-                  <div className="flex-1">
-                    <div className="flex items-center space-x-2">
-                      <h3 className={`font-semibold ${
-                        isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-                      }`}>
-                        {project.title}
-                      </h3>
-                      {project.external && (
-                        <svg className={`w-4 h-4 ${
-                          isDark ? 'text-gray-400' : 'text-[#18243E]/60'
-                        }`} fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                          <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
-                        </svg>
-                      )}
-                    </div>
-                    <p className={`text-sm mt-1 ${
-                      isDark ? 'text-gray-400' : 'text-[#18243E]/70'
-                    }`}>
-                      {project.description}
-                    </p>
+                <div className="text-center">
+                  <div className="text-4xl mb-4">{project.icon}</div>
+                  <div className="flex items-center justify-center space-x-2 mb-3">
+                    <h3 className={`text-xl font-semibold ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
+                      {project.title}
+                    </h3>
+                    {project.external && (
+                      <svg className={`w-4 h-4 ${isDark ? 'text-gray-400' : 'text-[#18243E]/60'}`} fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                        <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
+                      </svg>
+                    )}
                   </div>
+                  <p className={`text-sm leading-relaxed ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
+                    {project.description}
+                  </p>
                 </div>
               </a>
             ))}
           </div>
 
           <div className="space-y-12">
-            <h2 className={`text-3xl font-bold ${
-              isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-            }`}>
+            <h2 className={`text-3xl font-bold ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
               Featured Projects
             </h2>
             
@@ -198,59 +168,35 @@ export default function Projects() {
                     href={project.link}
                     target={project.external ? "_blank" : "_self"}
                     rel={project.external ? "noopener noreferrer" : ""}
-                    className={`block p-8 rounded-xl border transition-all duration-200 hover:scale-105 ${
-                      isDark 
-                        ? 'bg-gray-800/20 border-gray-700 hover:border-gray-600' 
-                        : 'bg-white/20 border-[#18243E]/20 hover:border-[#18243E]/40'
-                    }`}
+                    className={`block p-8 rounded-xl border transition-all duration-200 hover:scale-105 ${isDark ? 'bg-gray-800/20 border-gray-700 hover:border-gray-600' : 'bg-white/20 border-[#18243E]/20 hover:border-[#18243E]/40'}`}
                   >
                     <div className="flex items-center space-x-2 mb-2">
-                      <h3 className={`text-2xl font-bold ${
-                        isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-                      }`}>
+                      <h3 className={`text-2xl font-bold ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
                         {project.title}
                       </h3>
                       {project.external && (
-                        <svg className={`w-5 h-5 ${
-                          isDark ? 'text-gray-400' : 'text-[#18243E]/60'
-                        }`} fill="currentColor" viewBox="0 0 20 20">
+                        <svg className={`w-5 h-5 ${isDark ? 'text-gray-400' : 'text-[#18243E]/60'}`} fill="currentColor" viewBox="0 0 20 20">
                           <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
                           <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
                         </svg>
                       )}
                     </div>
-                    <p className={`text-sm mb-4 italic ${
-                      isDark ? 'text-gray-400' : 'text-[#18243E]/70'
-                    }`}>
+                    <p className={`text-sm mb-4 italic ${isDark ? 'text-gray-400' : 'text-[#18243E]/70'}`}>
                       {project.technologies}
                     </p>
-                    <p className={`${
-                      isDark ? 'text-gray-300' : 'text-[#18243E]/80'
-                    }`}>
+                    <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
                       {project.description}
                     </p>
                   </a>
                 ) : (
-                  <div
-                    className={`p-8 rounded-xl border ${
-                      isDark 
-                        ? 'bg-gray-800/20 border-gray-700' 
-                        : 'bg-white/20 border-[#18243E]/20'
-                    }`}
-                  >
-                    <h3 className={`text-2xl font-bold mb-2 ${
-                      isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-                    }`}>
+                  <div className={`p-8 rounded-xl border ${isDark ? 'bg-gray-800/20 border-gray-700' : 'bg-white/20 border-[#18243E]/20'}`}>
+                    <h3 className={`text-2xl font-bold mb-2 ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
                       {project.title}
                     </h3>
-                    <p className={`text-sm mb-4 italic ${
-                      isDark ? 'text-gray-400' : 'text-[#18243E]/70'
-                    }`}>
+                    <p className={`text-sm mb-4 italic ${isDark ? 'text-gray-400' : 'text-[#18243E]/70'}`}>
                       {project.technologies}
                     </p>
-                    <p className={`${
-                      isDark ? 'text-gray-300' : 'text-[#18243E]/80'
-                    }`}>
+                    <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
                       {project.description}
                     </p>
                   </div>
