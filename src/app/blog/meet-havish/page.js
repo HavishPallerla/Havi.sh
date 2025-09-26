@@ -230,7 +230,7 @@ export default function MeetHavish() {
                 <p className={`font-medium ${isDark ? 'text-green-300' : 'text-green-800'}`}>
                   Ready to connect? Find me on{' '}
                   <a href="#" className="underline hover:no-underline">LinkedIn</a>,{' '}
-                  <a href="#" className="underline hover:no-underline">GitHub</a>, or{' '}
+                  <a href="#" className="underline hover:no-underline">Discord</a>, or{' '}
                   <a href="#" className="underline hover:no-underline">shoot me an email</a>!
                 </p>
               </div>
