@@ -90,13 +90,13 @@ export default function Projects() {
               href="/projects"
               className={`text-sm ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'} transition-colors duration-200`}
             >
-              projects
+              Projects
             </Link>
             <Link
               href="/blog"
               className={`text-sm ${isDark ? 'text-gray-300 hover:text-[#fee6cd]' : 'text-[#18243E]/70 hover:text-[#18243E]'} transition-colors duration-200`}
             >
-              blog
+              Blog
             </Link>
           </div>
 
