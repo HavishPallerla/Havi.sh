@@ -107,7 +107,7 @@ export default function Home() {
         <h1 className={`text-8xl md:text-9xl font-bold mb-8 leading-none ${
           isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
         }`}>
-          havish
+          Havish
         </h1>
 
         <p className={`text-lg mb-8 leading-relaxed ${
