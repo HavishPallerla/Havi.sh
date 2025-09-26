@@ -80,11 +80,19 @@ export default function MeetHavish() {
         <main className="px-8 py-8 max-w-4xl mx-auto relative z-10 animate-in slide-in-from-bottom-4 duration-500">
           {/* Header */}
           <header className="mb-12 text-center">
-            <h1 className={`text-4xl md:text-5xl font-bold mb-6 ${
-              isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-            }`}>
-              Meet Havish: The Guy Who&apos;s Always Smiling
-            </h1>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <svg className={`h-6 w-6 ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`} fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <h1 className={`text-4xl md:text-5xl font-bold ${
+                isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
+              }`}>
+                Meet Havish: The Guy Who&apos;s Always Smiling
+              </h1>
+              <svg className={`h-6 w-6 ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`} fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
             <div className={`flex flex-wrap justify-center gap-4 text-sm ${
               isDark ? 'text-gray-400' : 'text-gray-600'
             }`}>

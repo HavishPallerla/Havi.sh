@@ -27,7 +27,8 @@ export default function Blog() {
       date: "September 22, 2025",
       readTime: "5 min read",
       link: "/blog/meet-havish",
-      tags: ["Personal", "Community", "Life"]
+      tags: ["Personal", "Community", "Life"],
+      pinned: true
     },
     {
       title: "Building Apps That Fuel Your Passions: A Developer's Learning Journey",
@@ -199,11 +200,18 @@ export default function Blog() {
                       </svg>
                     </div>
                     
-                    <h2 className={`text-2xl font-bold mb-3 ${
-                      isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-                    }`}>
-                      {post.title}
-                    </h2>
+                    <div className="flex items-center gap-2 mb-3">
+                      {post.pinned && (
+                        <svg className={`h-5 w-5 ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`} fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                      )}
+                      <h2 className={`text-2xl font-bold ${
+                        isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
+                      }`}>
+                        {post.title}
+                      </h2>
+                    </div>
                     
                     <p className={`text-base mb-4 leading-relaxed ${
                       isDark ? 'text-gray-300' : 'text-[#18243E]/80'
