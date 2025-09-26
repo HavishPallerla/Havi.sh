@@ -30,7 +30,7 @@ export default function Projects() {
     },
     {
       title: "NASA L'SPACE",
-      description: "Collaborated on Mars rover mission simulations, contributing navigation design concepts within NASA&apos;s mission development framework.",
+      description: "Collaborated on Mars rover mission simulations, contributing navigation design concepts within NASA's mission development framework.",
       icon: "🚀",
       link: "#",
       external: false
