@@ -30,7 +30,7 @@ export default function Projects() {
     },
     {
       title: "NASA L'SPACE",
-      description: "Developed autonomous navigation software for simulated Mars rover missions, integrating CI/CD pipelines and enabling seamless cross-team collaboration.",
+      description: "Collaborated on Mars rover mission simulations, contributing navigation design concepts within NASA&apos;s mission development framework.",
       icon: "🚀",
       link: "#",
       external: false
