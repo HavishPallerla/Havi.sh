@@ -59,7 +59,7 @@ export default function Projects() {
     },
     {
       title: "Humana Internal Search Platform",
-      technologies: "React, TypeScript, Node.js, Elasticsearch",
+      technologies: "React, TypeScript, Node.js, Python",
       description: "Built a comprehensive search platform that streamlined internal workflows from 8 to 2 steps across 15+ services, serving 10,000+ users and significantly improving operational efficiency."
     },
     {
