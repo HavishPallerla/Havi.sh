@@ -152,6 +152,20 @@ export default function MeetHavish() {
               <h3 className={`text-xl font-semibold mt-8 mb-4 ${
                 isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
               }`}>
+                🏃‍♂️ Running: My Thinking Time
+              </h3>
+
+              <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
+                Running has become one of my favorite ways to clear my head and stay energized. There&apos;s something incredibly therapeutic about hitting the pavement early in the morning or after a long day of coding. It&apos;s my time to think through complex problems, reflect on ideas, or sometimes just enjoy the rhythm of my footsteps.
+              </p>
+
+              <p className={`leading-relaxed mb-6 ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
+                Some of my best breakthrough moments have happened during runs. When I&apos;m stuck on a particularly challenging coding problem or trying to figure out the architecture for a new project, a good run often provides the mental clarity I need. Plus, it keeps me physically healthy, which is crucial when spending long hours at the computer!
+              </p>
+
+              <h3 className={`text-xl font-semibold mt-8 mb-4 ${
+                isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
+              }`}>
                 👥 Hanging with Friends: The Energy Booster
               </h3>
 
@@ -229,9 +243,9 @@ export default function MeetHavish() {
               }`}>
                 <p className={`font-medium ${isDark ? 'text-green-300' : 'text-green-800'}`}>
                   Ready to connect? Find me on{' '}
-                  <a href="#" className="underline hover:no-underline">LinkedIn</a>,{' '}
-                  <a href="#" className="underline hover:no-underline">Discord</a>, or{' '}
-                  <a href="#" className="underline hover:no-underline">shoot me an email</a>!
+                  <a href="https://www.linkedin.com/in/havishpallerla/" className="underline hover:no-underline">LinkedIn</a>,{' '}
+                  <a href="https://discord.com/users/havishpallerla" className="underline hover:no-underline">Discord</a>, or{' '}
+                  <a href="mailto:hey@havi.sh" className="underline hover:no-underline">shoot me an email</a>!
                 </p>
               </div>
             </div>
