@@ -23,7 +23,7 @@ export default function Blog() {
   const blogPosts = [
     {
       title: "Meet Havish: The Guy Who's Always Smiling",
-      description: "Getting to know the person behind the code: my love for basketball, poker, hanging with friends, and why you'll always catch me with a smile. Plus, how you can reach out if you want to chat!",
+      description: "Getting to know the person behind the code: my love for basketball, poker, running, hanging with friends, and why you'll always catch me with a smile. Plus, how you can reach out if you want to chat!",
       date: "September 22, 2025",
       readTime: "5 min read",
       link: "/blog/meet-havish",
