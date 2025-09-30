@@ -29,13 +29,6 @@ export default function Projects() {
       external: false
     },
     {
-      title: "NASA L'SPACE",
-      description: "Engineered Mars mission architecture and implemented trajectory modeling software in Python/NumPy with SciPy for orbital simulation, automated CI/CD with GitHub Actions reducing deployment errors by 25%, and refactored scheduling algorithms improving simulation efficiency by 30% across 500+ runs.",
-      icon: "🚀",
-      link: "/nasa-lspace-report.pdf",
-      external: true
-    },
-    {
       title: "Arcode",
       description: "A gamified learning platform where coding meets the arcade — designed to make programming education engaging through interactive challenges, progress tracking, and skill-based advancement.",
       icon: "🕹️",
@@ -46,13 +39,6 @@ export default function Projects() {
 
   const detailedProjects = [
     {
-      title: "NASA L'SPACE Mission Systems",
-      technologies: "Python, NumPy, SciPy, GitHub Actions, Docker",
-      description: "Engineered Mars mission architecture and implemented trajectory modeling software in Python/NumPy with SciPy for orbital simulation, contributing to a proposal selected from 200+ teams. Automated CI/CD with GitHub Actions and Docker, reducing Mars mission software deployment errors by 25%. Refactored Python scheduling algorithms with SciPy to improve simulation efficiency by 30% across 500+ runs.",
-      link: "/nasa-lspace-report.pdf",
-      external: true
-    },
-    {
       title: "Smart Email Triage System",
       technologies: "Python, NLP, Machine Learning",
       description: "Developed an intelligent NLP-powered email classification system for Auto-Owners Insurance that automatically analyzes customer support emails, classifies them into predefined categories, and intelligently routes each email to the appropriate department, reducing manual sorting efforts and accelerating response times."
@@ -60,19 +46,26 @@ export default function Projects() {
     {
       title: "VoiceBiometric Auth",
       technologies: "Salesforce, Lightning Web Components, Apex, JavaScript, Pindrop APIs",
-      description: "Engineered a comprehensive voice biometric authentication system integrated with Salesforce, reducing verification time by 85% while achieving 90%+ accuracy in deepfake detection and saving $25M+ annually.",
+      description: "Engineered a comprehensive voice biometric authentication system integrated with Salesforce, reducing verification time by 85% while achieving 90%+ accuracy in deepfake detection and saving $1M+ annually.",
       link: "https://drive.google.com/file/d/1Lmn3-5jUhpCsGRjEWh9d7bBgYbVW_1YB/view",
       external: true
     },
     {
       title: "Humana Internal Search Platform",
       technologies: "React, TypeScript, Node.js, Python",
-      description: "Built a comprehensive search platform that streamlined internal workflows from 8 to 2 steps across 15+ services, serving 10,000+ users and significantly improving operational efficiency."
+      description: "Built a comprehensive search platform that streamlined internal workflows from 8 to 2 steps across 15+ services, serving 5,000+ users and significantly improving operational efficiency."
     },
     {
       title: "AI Coding Assistant",
-      technologies: "React, Node.js, OpenAI API, JavaScript, Python, Java",
-      description: "Engineered an AI coding assistant using React and Node.js that serves 500+ developers, delivering intelligent code suggestions with OpenAI API integration and custom prompt optimization for multiple programming languages."
+      technologies: "OpenAI API, Microsoft Copilot, Azure DevOps, React, Node.js",
+      description: "Developed an internal AI chatbot for 500+ employees using OpenAI models integrated with Microsoft Copilot tools, saving 20+ hours/month by guiding Agile teams and aligning with Product Owner needs. Increased model accuracy by 35% and deployment speed by 15% through refined prompts and optimized Azure DevOps pipelines. Engineered API test functions to streamline data validation and cut testing time by 20%."
+    },
+    {
+      title: "NASA L'SPACE Mission Systems",
+      technologies: "Python, NumPy, SciPy, GitHub Actions, Docker",
+      description: "Researched mission architecture and built trajectory models in Python (NumPy/SciPy) for orbital simulations. Automated CI/CD with GitHub Actions and Docker, reducing Mars mission software deployment errors by 25%. Optimized Python scheduling algorithms with SciPy to improve simulation efficiency by 30% across 500+ runs.",
+      link: "/nasa-lspace-report.pdf",
+      external: true
     }
   ];
 
