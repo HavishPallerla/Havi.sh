@@ -30,10 +30,10 @@ export default function Projects() {
     },
     {
       title: "NASA L'SPACE",
-      description: "Collaborated on Mars rover mission simulations, contributing navigation design concepts within NASA's mission development framework.",
+      description: "Engineered Mars mission architecture and implemented trajectory modeling software in Python/NumPy with SciPy for orbital simulation, automated CI/CD with GitHub Actions reducing deployment errors by 25%, and refactored scheduling algorithms improving simulation efficiency by 30% across 500+ runs.",
       icon: "🚀",
-      link: "#",
-      external: false
+      link: "/nasa-lspace-report.pdf",
+      external: true
     },
     {
       title: "Arcode",
@@ -45,6 +45,13 @@ export default function Projects() {
   ];
 
   const detailedProjects = [
+    {
+      title: "NASA L'SPACE Mission Systems",
+      technologies: "Python, NumPy, SciPy, GitHub Actions, Docker",
+      description: "Engineered Mars mission architecture and implemented trajectory modeling software in Python/NumPy with SciPy for orbital simulation, contributing to a proposal selected from 200+ teams. Automated CI/CD with GitHub Actions and Docker, reducing Mars mission software deployment errors by 25%. Refactored Python scheduling algorithms with SciPy to improve simulation efficiency by 30% across 500+ runs.",
+      link: "/nasa-lspace-report.pdf",
+      external: true
+    },
     {
       title: "Smart Email Triage System",
       technologies: "Python, NLP, Machine Learning",
