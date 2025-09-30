@@ -46,7 +46,7 @@ export default function Projects() {
     {
       title: "VoiceBiometric Auth",
       technologies: "Salesforce, Lightning Web Components, Apex, JavaScript, Pindrop APIs",
-      description: "Engineered a comprehensive voice biometric authentication system integrated with Salesforce, reducing verification time by 85% while achieving 90%+ accuracy in deepfake detection and saving $1M+ annually.",
+      description: "Saved $1M+ annually by integrating a voice biometric fraud detection system with Pindrop API and Salesforce, enabling real-time deepfake prevention and automating verification workflows.",
       link: "https://drive.google.com/file/d/1Lmn3-5jUhpCsGRjEWh9d7bBgYbVW_1YB/view",
       external: true
     },
