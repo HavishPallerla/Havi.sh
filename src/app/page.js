@@ -113,7 +113,7 @@ export default function Home() {
         <p className={`text-lg mb-8 leading-relaxed ${
           isDark ? 'text-gray-300' : 'text-[#18243E]/80'
         }`}>
-          Student at Michigan State University studying Computer Science, with minors in Business and Innovation & Entrepreneurship.
+          CS + AI @ Michigan State (Incoming DS @ UMich (Winter 2026))
         </p>
 
         <div className="flex space-x-4 mb-12">
