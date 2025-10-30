@@ -113,7 +113,7 @@ export default function Home() {
         <p className={`text-lg mb-8 leading-relaxed ${
           isDark ? 'text-gray-300' : 'text-[#18243E]/80'
         }`}>
-          CS + AI at Michigan State University
+          CS & AI at Michigan State University
           <br />
           Incoming CS + DS at University of Michigan (Winter 2026)
         </p>
