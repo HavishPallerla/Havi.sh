@@ -23,14 +23,14 @@ export default function Projects() {
   const projects = [
     {
       title: "SideQuest App",
-      description: "Built a full-stack travel platform serving 100+ users with personalized itinerary recommendations, Google Maps integration, and AWS deployment achieving sub-200ms response times.",
+      description: "Developed a full-stack travel platform for 100+ users with personalized itineraries, Google Maps integration, and AWS deployment achieving <200 ms response times.",
       icon: "🧳",
       link: "#",
       external: false
     },
     {
       title: "Arcode",
-      description: "A gamified learning platform where coding meets the arcade — designed to make programming education engaging through interactive challenges, progress tracking, and skill-based advancement.",
+      description: "Created a gamified coding platform combining arcade-style challenges with progress tracking and skill-based advancement.",
       icon: "🕹️",
       link: "#",
       external: false
@@ -58,12 +58,12 @@ export default function Projects() {
     {
       title: "AI Coding Assistant",
       technologies: "OpenAI API, Microsoft Copilot, Azure DevOps, React, Node.js",
-      description: "Developed an internal AI chatbot for 500+ employees using OpenAI models integrated with Microsoft Copilot tools, saving 20+ hours/month by guiding Agile teams and aligning with Product Owner needs. Increased model accuracy by 35% and deployment speed by 15% through refined prompts and optimized Azure DevOps pipelines. Engineered API test functions to streamline data validation and cut testing time by 20%."
+      description: "Developed an internal AI chatbot used by 500+ employees that integrates OpenAI models with Microsoft Copilot to guide Agile cross-functional teams and align work to Product Owner priorities, saving 20+ hours/month. Improved model accuracy by 35% and reduced deployment time by 15% through refined OpenAI prompt engineering and optimized Azure DevOps pipelines. Built API test functions to validate POST/GET data and cut testing time by 20%."
     },
     {
       title: "NASA L'SPACE Mission Systems",
       technologies: "Python, NumPy, SciPy, GitHub Actions, Docker",
-      description: "Researched mission architecture and built trajectory models in Python (NumPy/SciPy) for orbital simulations. Automated CI/CD with GitHub Actions and Docker, reducing Mars mission software deployment errors by 25%. Optimized Python scheduling algorithms with SciPy to improve simulation efficiency by 30% across 500+ runs.",
+      description: "Researched spacecraft systems through NASA’s L’SPACE program by defining mission requirements, building C++ simulations to analyze subsystem reliability, and automating data validation across 50+ test cases to ensure mission accuracy and performance.",
       link: "/nasa-lspace-report.pdf",
       external: true
     }
