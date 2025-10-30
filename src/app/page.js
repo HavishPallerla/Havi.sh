@@ -115,7 +115,7 @@ export default function Home() {
         }`}>
           CS + AI at Michigan State University
           <br />
-          Incoming CS @ UMich (Winter 2026)
+          Incoming CS + DS at University of Michigan (Winter 2026)
         </p>
 
         <div className="flex space-x-4 mb-12">
