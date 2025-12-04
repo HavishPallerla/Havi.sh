@@ -113,7 +113,7 @@ export default function Home() {
         <p className={`text-lg mb-8 leading-relaxed ${
           isDark ? 'text-gray-300' : 'text-[#18243E]/80'
         }`}>
-          CS at University of Michigan-Ann Arbor
+          Studying Computer Science at UMich. Stuff I build goes here.
         </p>
 
         <div className="flex space-x-4 mb-12">
