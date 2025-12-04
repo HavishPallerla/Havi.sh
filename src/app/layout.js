@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: 'Havish',
-  description: 'Student at Michigan State University (Incoming DS @ UMich (Winter 2026)',
+  description: 'Studying Computer Science at UMich. Stuff I build goes here.',
 };
 
 export default function RootLayout({ children }) {
