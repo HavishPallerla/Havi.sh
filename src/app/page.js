@@ -121,7 +121,7 @@ export default function Home() {
             // { href: 'https://github.com/havishpallerla', alt: 'github' },
             { href: 'https://linkedin.com/in/havishpallerla', alt: 'linkedin' },
             { href: 'https://discord.com/users/248496824506253322', alt: 'discord' },
-            { href: 'mailto:hey@havi.sh', alt: 'email' },
+            { href: 'mailto:pallerla@umich.edu', alt: 'email' },
             { href: 'https://twitter.com/havishpallerla', alt: 'x-twitter' },
           ].map((social, index) => (
             <a
