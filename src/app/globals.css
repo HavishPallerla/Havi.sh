@@ -104,6 +104,9 @@ a { text-decoration: none; color: inherit; }
   .timeline-row { grid-template-columns: 1fr; }
   .role-dates { text-align: left; white-space: normal; }
   .timeline-arc { top: 70px; height: 80px; }
-  .site-title { left: 20px; top: 18px; }
+  .site-title { left: 20px; top: 18px; transform: none; }
+  .site-title .name { font-size: 18px; }
+  .site-title .subtitle { font-size: 13px; }
+  .resume-container { padding-top: 110px; }
   .today-badge { left: 50%; top: 44px; }
 }
