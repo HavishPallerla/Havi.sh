@@ -63,7 +63,6 @@ export default function Home() {
               aria-label="Toggle color theme"
             >
               {isDark ? (
-                /* When in dark mode, show a sun icon (click to switch to light) */
                 <svg
                   className="h-6 w-6"
                   viewBox="0 0 24 24"
@@ -79,7 +78,6 @@ export default function Home() {
                   <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
                 </svg>
               ) : (
-                /* When in light mode, show a moon icon (click to switch to dark) */
                 <svg
                   className="h-6 w-6"
                   viewBox="0 0 24 24"
