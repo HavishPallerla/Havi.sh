@@ -7,6 +7,7 @@
   --foreground: #333333;
   --muted: #9aa0a6;
   --accent: #1e90ff;
+  --opposite: #000000;
   --line: #ececec;
 }
 
@@ -15,6 +16,7 @@
   --foreground: #e6e6e6;
   --muted: #9aa0a6;
   --accent: #2aa6ff;
+  --opposite: #ffffff;
   --line: #1a1a1a;
 }
 
@@ -34,6 +36,22 @@ body {
 ::selection {
   background: var(--accent);
   color: #fff;
+}
+::-moz-selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* For bold/important text, make selection background transparent and "fill" letters
+   with the opposite theme color for a reversed highlight effect. */
+.role-title::selection,
+.name::selection,
+strong::selection,
+.repo-item-title::selection {
+  background: transparent;
+  color: var(--opposite);
+  -webkit-text-fill-color: var(--opposite);
+  text-shadow: none;
 }
 
 .hover-scale {
