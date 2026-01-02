@@ -59,7 +59,7 @@ export default function Home() {
           <nav className="flex items-center justify-end px-8 py-6 relative z-20">
             <button
               onClick={() => setIsDark(!isDark)}
-              className="p-2 rounded-md bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              className="p-2 rounded-md bg-transparent transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent/30"
               aria-label="Toggle color theme"
             >
               {isDark ? (
