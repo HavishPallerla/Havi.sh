@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import SwirlBackground from '../../components/SwirlBackground';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,8 +21,6 @@ export default function PassionDrivenDevelopmentPost() {
 
   return (
     <>
-      <SwirlBackground />
-      
       <div
         className={`min-h-screen transition-colors duration-300 relative ${
           isDark ? 'bg-[#18243E]/50' : 'bg-[#fee6cd]/50'
