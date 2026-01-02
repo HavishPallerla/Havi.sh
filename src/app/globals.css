@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #fee6cd;
-  --foreground: #18243E;
+  --background: #ffffff;
+  --foreground: #333333;
+  --muted: #9aa0a6;
+  --accent: #1e90ff;
+  --line: #ececec;
 }
 
 .dark {
-  --background: #18243E;
-  --foreground: #fee6cd;
+  --background: #0b0b0b;
+  --foreground: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #2aa6ff;
+  --line: #1a1a1a;
 }
 
 * {
@@ -19,15 +25,15 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
 }
 
 ::selection {
-  background: var(--foreground);
-  color: var(--background);
+  background: var(--accent);
+  color: #fff;
 }
 
 .hover-scale {
@@ -43,34 +49,61 @@ body {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-out forwards;
+.animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+.animate-fade-in-delayed { animation: fadeIn 0.5s ease-out 0.2s forwards; opacity: 0; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+a { text-decoration: none; color: inherit; }
+
+/* Minimalist resume-like layout */
+.site-root { min-height: 100vh; display: flex; flex-direction: column; }
+
+.hero {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 48px;
 }
 
-.animate-fade-in-delayed {
-  animation: fadeIn 0.5s ease-out 0.2s forwards;
-  opacity: 0;
-}
+.site-title { text-align: center; position: absolute; left: 50%; transform: translateX(-50%); top: 28px; z-index: 40; }
+.site-title .name { font-weight: 600; color: var(--foreground); letter-spacing: 0.02em; font-size: 20px; }
+.site-title .subtitle { color: var(--muted); margin-top: 6px; font-size: 15px; }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
+.timeline-arc { position: absolute; left: 0; right: 0; top: 120px; height: 140px; pointer-events: none; }
+.timeline-arc svg { width: 100%; height: 100%; }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
 
-a:hover {
-  text-decoration: none;
+
+.resume-container { max-width: 980px; margin: 0 auto; padding: 24px; padding-top: 200px; display: grid; grid-template-columns: 1fr; gap: 32px; }
+.timeline { display: grid; grid-template-columns: 1fr; gap: 24px; }
+
+.timeline-row { display: grid; grid-template-columns: 1fr 220px; gap: 16px; align-items: start; }
+.role-left { color: var(--foreground); }
+.role-title { font-weight: 600; margin-bottom: 6px; }
+.role-company { color: var(--muted); margin-left: 8px; font-weight: 400; }
+.role-desc { color: var(--muted); margin-top: 8px; line-height: 1.5; }
+.role-dates { text-align: right; color: var(--muted); white-space: nowrap; overflow-wrap: normal; }
+
+.links-row { display: flex; justify-content: space-between; align-items: center; margin-top: 48px; color: var(--muted); }
+.links-left { display: flex; align-items: center; gap: 28px; }
+.links-left a { display: inline-flex; align-items: center; justify-content: center; }
+.social-icon { width: 22px; height: 22px; display: inline-block; opacity: 0.95; transition: transform 120ms ease, opacity 120ms ease; }
+.links-left a:hover .social-icon { transform: translateY(-2px); opacity: 1; }
+
+/* Force social icons to pure white in dark mode (keeps hover lift) */
+.dark .social-icon { filter: brightness(0) invert(1); opacity: 1; }
+
+/* Separator line after education */
+.education-sep { width: 100%; border-top: 1px solid var(--line); margin-top: 28px; opacity: 0.9; }
+
+@media (max-width: 768px) {
+  .timeline-row { grid-template-columns: 1fr; }
+  .role-dates { text-align: left; white-space: normal; }
+  .timeline-arc { top: 70px; height: 80px; }
+  .site-title { left: 20px; top: 18px; }
+  .today-badge { left: 50%; top: 44px; }
 }

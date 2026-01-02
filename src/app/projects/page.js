@@ -1,211 +1,75 @@
-'use client';
+"use client";
 
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import SwirlBackground from '../components/SwirlBackground';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function Projects() {
-  const [isDark, setIsDark] = useState(true);
+const projects = [
+  {
+    title: 'SideQuest App',
+    description: 'A full-stack travel platform with personalized itineraries and Google Maps integration.',
+    right: 'Living Document',
+    href: '#'
+  },
+  {
+    title: "Arcode",
+    description: 'A gamified coding platform combining arcade-style challenges with progress tracking.',
+    right: 'Living Document',
+    href: '#'
+  },
+  {
+    title: 'Smart Email Triage System',
+    description: 'Intelligent NLP-powered email classification and routing for customer support.',
+    right: 'Nov 2024',
+    href: '#'
+  },
+  {
+    title: "VoiceBiometric Auth",
+    description: 'Voice biometric fraud detection integrated into Salesforce and Pindrop APIs.',
+    right: 'Oct 2024',
+    href: '#'
+  }
+];
 
-  useEffect(() => {
-    const root = document.documentElement;
-    if (isDark) {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
-  }, [isDark]);
-
-  const projects = [
-    {
-      title: "SideQuest App",
-      description: "Developed a full-stack travel platform for 100+ users with personalized itineraries, Google Maps integration, and AWS deployment achieving <200 ms response times.",
-      icon: "🧳",
-      link: "#",
-      external: false
-    },
-    {
-      title: "Arcode",
-      description: "Created a gamified coding platform combining arcade-style challenges with progress tracking and skill-based advancement.",
-      icon: "🕹️",
-      link: "#",
-      external: false
-    }
-  ];
-
-  const detailedProjects = [
-    {
-      title: "Smart Email Triage System",
-      technologies: "Python, NLP, Machine Learning",
-      description: "Developed an intelligent NLP-powered email classification system for Auto-Owners Insurance that automatically analyzes customer support emails, classifies them into predefined categories, and intelligently routes each email to the appropriate department, reducing manual sorting efforts and accelerating response times."
-    },
-    {
-      title: "VoiceBiometric Auth",
-      technologies: "Salesforce, Lightning Web Components, Apex, JavaScript, Pindrop APIs",
-      description: "Saved $1M+ annually by integrating a voice biometric fraud detection system with Pindrop API and Salesforce, enabling real-time deepfake prevention and automating verification workflows.",
-      link: "https://drive.google.com/file/d/1Lmn3-5jUhpCsGRjEWh9d7bBgYbVW_1YB/view",
-      external: true
-    },
-    {
-      title: "Humana Internal Search Platform",
-      technologies: "React, TypeScript, Node.js, Python",
-      description: "Built a comprehensive search platform that streamlined internal workflows from 8 to 2 steps across 15+ services, serving 5,000+ users and significantly improving operational efficiency."
-    },
-    {
-      title: "AI Coding Assistant",
-      technologies: "OpenAI API, Microsoft Copilot, Azure DevOps, React, Node.js",
-      description: "Developed an internal AI chatbot used by 500+ employees that integrates OpenAI models with Microsoft Copilot to guide Agile cross-functional teams and align work to Product Owner priorities, saving 20+ hours/month. Improved model accuracy by 35% and reduced deployment time by 15% through refined OpenAI prompt engineering and optimized Azure DevOps pipelines. Built API test functions to validate POST/GET data and cut testing time by 20%."
-    },
-    {
-      title: "NASA L'SPACE Mission Systems",
-      technologies: "Python, NumPy, SciPy, GitHub Actions, Docker",
-      description: "Researched spacecraft systems through NASA’s L’SPACE program by defining mission requirements, building C++ simulations to analyze subsystem reliability, and automating data validation across 50+ test cases to ensure mission accuracy and performance.",
-      link: "/nasa-lspace-report.pdf",
-      external: true
-    }
-  ];
-
+export default function ProjectsPage() {
   return (
-    <>
-      <SwirlBackground />
-      
-      <div className={`min-h-screen transition-colors duration-300 relative ${isDark ? 'bg-[#18243E]/50' : 'bg-[#fee6cd]/50'} ${inter.className}`}>
-        <nav className="flex items-center justify-between px-8 py-6 relative z-10">
-          <Link href="/" className="transition-opacity duration-200 hover:opacity-70">
-            <Image
-              src={isDark ? "/logo.png" : "/logo-dark.png"}
-              alt="Havish Logo"
-              width={24}
-              height={24}
-              className="w-6 h-6"
-            />
-          </Link>
-          
-          <div className="flex items-center space-x-8">
-            <Link
-              href="/projects"
-              className={`text-sm ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'} transition-colors duration-200`}
-            >
-              Projects
-            </Link>
-            <Link
-              href="/blog"
-              className={`text-sm ${isDark ? 'text-gray-300 hover:text-[#fee6cd]' : 'text-[#18243E]/70 hover:text-[#18243E]'} transition-colors duration-200`}
-            >
-              Blog
-            </Link>
-          </div>
+    <div className={`site-root ${inter.className}`}>
+      <header className="hero">
+        <div className="site-title">
+          <div className="name">Projects</div>
+          <div className="subtitle">A list of selected projects and writeups.</div>
+        </div>
 
-          <button
-            onClick={() => setIsDark(!isDark)}
-            className={`p-2 rounded-lg ${isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-[#18243E]/10 hover:bg-[#18243E]/20'} transition-colors duration-200`}
-          >
-            {isDark ? (
-              <svg className={`h-4 w-4 text-[#fee6cd]`} fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-              </svg>
-            ) : (
-              <svg className={`h-4 w-4 text-[#18243E]`} fill="currentColor" viewBox="0 0 20 20">
-                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-              </svg>
-            )}
-          </button>
-        </nav>
+        <div className="top-nav" aria-label="primary">
+          <nav className="top-nav-inner">
+            <Link href="/projects">Projects</Link>
+            <Link href="/blog">Blog</Link>
+          </nav>
+        </div>
 
-        <main className="px-8 py-16 max-w-4xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h1 className={`text-6xl md:text-7xl font-bold mb-6 ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
-              Projects
-            </h1>
-            <p className={`text-lg ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-              A list of all the projects I&apos;ve worked on or I&apos;m currently working on.
-            </p>
-          </div>
+        <div className="timeline-arc" aria-hidden>
+          <svg viewBox="0 0 1600 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,120 C400,20 1200,20 1600,120" fill="none" stroke="var(--line)" strokeWidth="1" />
+          </svg>
+        </div>
+      </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 max-w-4xl mx-auto">
-            {projects.map((project, index) => (
-              <a
-                key={index}
-                href={project.link}
-                target={project.external ? "_blank" : "_self"}
-                rel={project.external ? "noopener noreferrer" : ""}
-                className={`block p-8 rounded-xl border transition-all duration-200 hover:scale-105 ${isDark ? 'bg-gray-800/30 border-gray-700 hover:border-gray-600' : 'bg-white/30 border-[#18243E]/20 hover:border-[#18243E]/40'}`}
-              >
-                <div className="text-center">
-                  <div className="text-4xl mb-4">{project.icon}</div>
-                  <div className="flex items-center justify-center space-x-2 mb-3">
-                    <h3 className={`text-xl font-semibold ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
-                      {project.title}
-                    </h3>
-                    {project.external && (
-                      <svg className={`w-4 h-4 ${isDark ? 'text-gray-400' : 'text-[#18243E]/60'}`} fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                        <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
-                      </svg>
-                    )}
-                  </div>
-                  <p className={`text-sm leading-relaxed ${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                    {project.description}
-                  </p>
-                </div>
-              </a>
-            ))}
-          </div>
+      <main className="resume-container repo-container">
+        <section>
+          <div style={{height:8}} />
 
-          <div className="space-y-12">
-            <h2 className={`text-3xl font-bold ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
-              Featured Projects
-            </h2>
-            
-            {detailedProjects.map((project, index) => (
-              <div key={index}>
-                {project.link ? (
-                  <a
-                    href={project.link}
-                    target={project.external ? "_blank" : "_self"}
-                    rel={project.external ? "noopener noreferrer" : ""}
-                    className={`block p-8 rounded-xl border transition-all duration-200 hover:scale-105 ${isDark ? 'bg-gray-800/20 border-gray-700 hover:border-gray-600' : 'bg-white/20 border-[#18243E]/20 hover:border-[#18243E]/40'}`}
-                  >
-                    <div className="flex items-center space-x-2 mb-2">
-                      <h3 className={`text-2xl font-bold ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
-                        {project.title}
-                      </h3>
-                      {project.external && (
-                        <svg className={`w-5 h-5 ${isDark ? 'text-gray-400' : 'text-[#18243E]/60'}`} fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                          <path d="M5 5a2 2 0 00-2 2v6a2 2 0 002-2v-2a1 1 0 10-2 0v2H5V7h2a1 1 0 000-2H5z" />
-                        </svg>
-                      )}
-                    </div>
-                    <p className={`text-sm mb-4 italic ${isDark ? 'text-gray-400' : 'text-[#18243E]/70'}`}>
-                      {project.technologies}
-                    </p>
-                    <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                      {project.description}
-                    </p>
-                  </a>
-                ) : (
-                  <div className={`p-8 rounded-xl border ${isDark ? 'bg-gray-800/20 border-gray-700' : 'bg-white/20 border-[#18243E]/20'}`}>
-                    <h3 className={`text-2xl font-bold mb-2 ${isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'}`}>
-                      {project.title}
-                    </h3>
-                    <p className={`text-sm mb-4 italic ${isDark ? 'text-gray-400' : 'text-[#18243E]/70'}`}>
-                      {project.technologies}
-                    </p>
-                    <p className={`${isDark ? 'text-gray-300' : 'text-[#18243E]/80'}`}>
-                      {project.description}
-                    </p>
-                  </div>
-                )}
+          {projects.map((p, i) => (
+            <a key={i} href={p.href} className="repo-item">
+              <div>
+                <div className="repo-item-title">{p.title}</div>
+                <div className="repo-item-desc">{p.description}</div>
               </div>
-            ))}
-          </div>
-        </main>
-      </div>
-    </>
+              <div className="repo-item-date">{p.right}</div>
+            </a>
+          ))}
+        </section>
+      </main>
+    </div>
   );
 }

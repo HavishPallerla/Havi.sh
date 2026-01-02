@@ -4,147 +4,148 @@ import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import SwirlBackground from './components/SwirlBackground';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const ROLES = [
+  {
+    title: 'Software Engineering Internship',
+    company: 'Humana',
+    dates: 'May 2025 — Dec. 2025',
+    desc: 'Optimized Resource-Based Interface Tool (Project ORBIT)',
+  },
+  {
+    title: 'Software Research',
+    company: 'NASA',
+    dates: 'Jan. 2025 — May 2025',
+    desc: 'Worked on VULCAN research and tooling for space systems.',
+  },
+  {
+    title: 'Software Research',
+    company: 'College of Engineering at UMich',
+    dates: 'Sep. 2024 — March 2025',
+    desc: 'The Future of Programming Lab (Project Hazel); advised by Dr. Cyrus Omar',
+  },
+];
+
+const EDUCATION = [
+  {
+    school: 'University of Michigan',
+    degree: 'Computer Science',
+    dates: 'May 2027',
+  },
+];
+
 export default function Home() {
-  const [isDark, setIsDark] = useState(true);
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     const root = document.documentElement;
-    if (isDark) {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
+    if (isDark) root.classList.add('dark');
+    else root.classList.remove('dark');
   }, [isDark]);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const formatDate = (date) => {
-    const months = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-    const day = date.getDate();
-    const month = months[date.getMonth()];
-    const year = date.getFullYear();
-    const time = date.toLocaleTimeString('en-US', { 
-      hour: 'numeric',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: true 
-    });
-
-    const suffix = ['th','st','nd','rd'][(day % 10 > 3 ? 0 : day % 10)];
-    return `${month} ${day}${suffix} ${year} • ${time}`;
-  };
+  const social = [
+    { href: 'https://linkedin.com/in/havishpallerla', alt: 'linkedin' },
+    { href: 'https://discord.com/users/248496824506253322', alt: 'discord' },
+    { href: 'mailto:pallerla@umich.edu', alt: 'email' },
+    { href: 'https://twitter.com/havishpallerla', alt: 'x-twitter' },
+  ];
 
   return (
     <>
-      <SwirlBackground />
-      
-      <div
-        className={`min-h-screen transition-colors duration-300 relative ${
-          isDark ? 'bg-[#18243E]/50' : 'bg-[#fee6cd]/50'
-        } ${inter.className}`}
-      >
-        <nav className="flex items-center justify-between px-8 py-6 relative z-10">
-        <Link href="/" className="transition-opacity duration-200 hover:opacity-70">
-          <Image
-            src={isDark ? "/logo.png" : "/logo-dark.png"}
-            alt="Havish Logo"
-            width={24}
-            height={24}
-            className="w-6 h-6"
-          />
-        </Link>
-        
-        <div className="flex items-center space-x-8">
-          <Link
-            href="/projects"
-            className={`text-sm ${
-              isDark ? 'text-gray-300 hover:text-[#fee6cd]' : 'text-[#18243E]/70 hover:text-[#18243E]'
-            } transition-colors duration-200`}
-          >
-            Projects
-          </Link>
-          <Link
-            href="/blog"
-            className={`text-sm ${
-              isDark ? 'text-gray-300 hover:text-[#fee6cd]' : 'text-[#18243E]/70 hover:text-[#18243E]'
-            } transition-colors duration-200`}
-          >
-            Blog
-          </Link>
-        </div>
-
-        <button
-          onClick={() => setIsDark(!isDark)}
-          className={`p-2 rounded-lg ${
-            isDark ? 'bg-gray-800 hover:bg-gray-700' : 'bg-[#18243E]/10 hover:bg-[#18243E]/20'
-          } transition-colors duration-200`}
-        >
-          {isDark ? (
-            <svg className={`h-4 w-4 text-[#fee6cd]`} fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-            </svg>
-          ) : (
-            <svg className={`h-4 w-4 text-[#18243E]`} fill="currentColor" viewBox="0 0 20 20">
-              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-            </svg>
-          )}
-        </button>
-      </nav>
-        <main className="px-8 py-16 max-w-2xl relative z-10">
-        <h1 className={`text-8xl md:text-9xl font-bold mb-8 leading-none ${
-          isDark ? 'text-[#fee6cd]' : 'text-[#18243E]'
-        }`}>
-          Havish
-        </h1>
-
-        <p className={`text-lg mb-8 leading-relaxed ${
-          isDark ? 'text-gray-300' : 'text-[#18243E]/80'
-        }`}>
-          Studying Computer Science at UMich. Stuff I build goes here.
-        </p>
-
-        <div className="flex space-x-4 mb-12">
-          {[
-            // { href: 'https://github.com/havishpallerla', alt: 'github' },
-            { href: 'https://linkedin.com/in/havishpallerla', alt: 'linkedin' },
-            { href: 'https://discord.com/users/248496824506253322', alt: 'discord' },
-            { href: 'mailto:pallerla@umich.edu', alt: 'email' },
-            { href: 'https://twitter.com/havishpallerla', alt: 'x-twitter' },
-          ].map((social, index) => (
-            <a
-              key={index}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${
-                isDark ? 'text-gray-400 hover:text-[#fee6cd]' : 'text-[#18243E]/60 hover:text-[#18243E]'
-              } transition-colors duration-200`}
+      <div className={`site-root ${inter.className}`}>
+        <header className="hero">
+          <nav className="flex items-center justify-end px-8 py-6 relative z-20">
+            <button
+              onClick={() => setIsDark(!isDark)}
+              className="p-2 rounded-md bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              aria-label="Toggle color theme"
             >
-              <Image
-                src={isDark ? `/icons/${social.alt}-dark.svg` : `/icons/${social.alt}.svg`}
-                alt={social.alt}
-                width={20}
-                height={20}
-                className="w-5 h-5"
-              />
-            </a>
-          ))}
-        </div>
-      </main>
-    </div>
+              {isDark ? (
+                /* When in dark mode, show a sun icon (click to switch to light) */
+                <svg
+                  className="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                  style={{ color: 'white' }}
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                </svg>
+              ) : (
+                /* When in light mode, show a moon icon (click to switch to dark) */
+                <svg
+                  className="h-6 w-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                  style={{ color: 'var(--foreground)' }}
+                >
+                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+              )}
+            </button>
+          </nav>
+
+          <div className="site-title">
+            <div className="name">Havish Pallerla</div>
+          </div>
+
+          <div className="timeline-arc" aria-hidden>
+            <svg viewBox="0 0 1600 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0,120 C400,20 1200,20 1600,120" fill="none" stroke="var(--line)" strokeWidth="1" />
+            </svg>
+          </div>
+        </header>
+
+        <main className="resume-container z-30">
+          <section className="timeline">
+            {EDUCATION.map((e, i) => (
+              <div key={i} className="timeline-row">
+                <div>
+                  <div className="role-title">{e.school}</div>
+                  <div className="role-desc">{e.degree}</div>
+                </div>
+                <div className="role-dates">{e.dates}</div>
+              </div>
+            ))}
+
+            <div className="education-sep" aria-hidden />
+          </section>
+
+          <section className="timeline">
+            {ROLES.map((r, idx) => (
+              <div key={idx} className="timeline-row">
+                <div className="role-left">
+                  <div className="role-title">{r.title} <span className="role-company">{r.company}</span></div>
+                  <div className="role-desc">{r.desc}</div>
+                </div>
+                <div className="role-dates">{r.dates}</div>
+              </div>
+            ))}
+          </section>
+
+          <div className="links-row">
+            <div className="links-left flex items-center">
+              {social.map((s, i) => (
+                <a key={i} href={s.href} target="_blank" rel="noopener noreferrer">
+                  <Image className="social-icon" src={isDark ? `/icons/${s.alt}-dark.svg` : `/icons/${s.alt}.svg`} alt={s.alt} width={20} height={20} />
+                </a>
+              ))}
+            </div>
+          </div>
+        </main>
+      </div>
     </>
   );
 }
