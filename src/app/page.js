@@ -32,7 +32,7 @@ const EDUCATION = [
   {
     school: 'University of Michigan',
     degree: 'Computer Science',
-    dates: 'May 2027',
+    dates: 'May 2028',
   },
 ];
 
