@@ -83,21 +83,21 @@ a { text-decoration: none; color: inherit; }
 
 .hero {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 48px;
+  padding-top: 12px;
+  padding-bottom: 28px;
 }
 
 .site-title { text-align: center; position: absolute; left: 50%; transform: translateX(-50%); top: 28px; z-index: 40; }
 .site-title .name { font-weight: 600; color: var(--foreground); letter-spacing: 0.02em; font-size: 20px; }
 .site-title .subtitle { color: var(--muted); margin-top: 6px; font-size: 15px; }
 
-.timeline-arc { position: absolute; left: 0; right: 0; top: 120px; height: 140px; pointer-events: none; }
+.timeline-arc { position: absolute; left: 0; right: 0; top: 80px; height: 100px; pointer-events: none; }
 .timeline-arc svg { width: 100%; height: 100%; }
 
 
 
-.resume-container { max-width: 980px; margin: 0 auto; padding: 24px; padding-top: 200px; display: grid; grid-template-columns: 1fr; gap: 32px; }
-.timeline { display: grid; grid-template-columns: 1fr; gap: 24px; }
+.resume-container { max-width: 700px; margin: 0 auto; padding: 20px; padding-top: 120px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+.timeline { display: grid; grid-template-columns: 1fr; gap: 16px; }
 
 .timeline-row { display: grid; grid-template-columns: 1fr 220px; gap: 16px; align-items: start; }
 .role-left { color: var(--foreground); }
@@ -106,8 +106,8 @@ a { text-decoration: none; color: inherit; }
 .role-desc { color: var(--muted); margin-top: 8px; line-height: 1.5; }
 .role-dates { text-align: right; color: var(--muted); white-space: nowrap; overflow-wrap: normal; }
 
-.links-row { display: flex; justify-content: space-between; align-items: center; margin-top: 48px; color: var(--muted); }
-.links-left { display: flex; align-items: center; gap: 28px; }
+.links-row { display: flex; justify-content: space-between; align-items: center; margin-top: 32px; color: var(--muted); }
+.links-left { display: flex; align-items: center; gap: 20px; }
 .links-left a { display: inline-flex; align-items: center; justify-content: center; }
 .social-icon { width: 22px; height: 22px; display: inline-block; opacity: 0.95; transition: transform 120ms ease, opacity 120ms ease; }
 .links-left a:hover .social-icon { transform: translateY(-2px); opacity: 1; }
@@ -116,7 +116,7 @@ a { text-decoration: none; color: inherit; }
 .dark .social-icon { filter: brightness(0) invert(1); opacity: 1; }
 
 /* Separator line after education */
-.education-sep { width: 100%; border-top: 1px solid var(--line); margin-top: 28px; opacity: 0.9; }
+.education-sep { width: 100%; border-top: 1px solid var(--line); margin-top: 16px; opacity: 0.9; }
 
 @media (max-width: 768px) {
   .timeline-row { grid-template-columns: 1fr; }

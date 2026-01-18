@@ -40,10 +40,25 @@ export default function Home() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = savedTheme ? savedTheme === 'dark' : false;
+    setIsDark(prefersDark);
     const root = document.documentElement;
-    if (isDark) root.classList.add('dark');
+    if (prefersDark) root.classList.add('dark');
     else root.classList.remove('dark');
-  }, [isDark]);
+  }, []);
+
+  const toggleTheme = (newState) => {
+    setIsDark(newState);
+    const root = document.documentElement;
+    if (newState) {
+      root.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      root.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  };
 
   const social = [
     { href: 'https://linkedin.com/in/havishpallerla', alt: 'linkedin' },
@@ -56,9 +71,14 @@ export default function Home() {
     <>
       <div className={`site-root ${inter.className}`}>
         <header className="hero">
-          <nav className="flex items-center justify-end px-8 py-6 relative z-20">
+          <nav className="flex items-center justify-between px-8 py-6 relative z-20">
+            <div className="flex gap-6">
+              <Link href="/projects" className="text-sm hover:opacity-70 transition-opacity">
+                Projects
+              </Link>
+            </div>
             <button
-              onClick={() => setIsDark(!isDark)}
+              onClick={() => toggleTheme(!isDark)}
               className="p-2 rounded-md bg-transparent transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent/30"
               aria-label="Toggle color theme"
             >
