@@ -117,7 +117,7 @@ export default function ProjectsPage() {
 
         <div className="site-title">
           <div className="name">Projects</div>
-          <div className="subtitle">A list of selected projects I am passionate about.</div>
+          <div className="subtitle">A curated selection of projects that reflect my passions and interests.</div>
         </div>
 
         <div className="timeline-arc" aria-hidden>
